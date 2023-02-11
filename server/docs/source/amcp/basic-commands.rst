@@ -142,9 +142,9 @@ Removes consumer from the channel.
 
 Syntax::
 
-	REMOVE [channel:int] [consumer:string] {parameters:string}
+	REMOVE [channel:int]{-[layer:int]} [consumer:string] {parameters:string}
 
 Example::
 
-	>> REMOVE 1 FILE 
-	>> REMOVE 1 DECKLINK 1
+	>> REMOVE 1-90 FILE 
+	>> REMOVE 1-5 DECKLINK 1
